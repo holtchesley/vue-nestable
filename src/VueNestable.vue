@@ -131,6 +131,11 @@ export default {
       required: false,
       default: false
     },
+    collapsedGroups: {
+      type: Array,
+      required: false,
+      default: () => ([])
+    },
     hooks: {
       type: Object,
       required: false,
@@ -163,7 +168,6 @@ export default {
       el: null,
       elCopyStyles: null,
       isDirty: false,
-      collapsedGroups: [],
       listId: Math.random().toString(36).slice(2)
     }
   },

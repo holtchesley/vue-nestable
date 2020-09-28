@@ -1,7 +1,7 @@
 var path = require('path')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+const TerserPlugin = require('terser-webpack-plugin')
 
 module.exports = {
   entry: './example/main.js',
@@ -46,16 +46,7 @@ module.exports = {
     })
   ],
   optimization: {
-    minimizer: [
-      new UglifyJsPlugin({
-        cache: true,
-        parallel: true,
-        uglifyOptions: {
-          output: {
-            comments: false
-          }
-        }
-      })
-    ]
+    minimize: true,
+    minimizer: [TerserPlugin()]
   }
 }

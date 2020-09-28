@@ -1,6 +1,6 @@
 {
-  "name": "vue-nestable",
-  "version": "2.6.0",
+  "name": "@holtchesley/vue-nestable",
+  "version": "2.6.1",
   "description": "vue-nestable",
   "author": "Ralph Huwiler <ralph@huwiler.rocks>",
   "homepage": "https://rhwilr.github.io/vue-nestable/",
@@ -58,7 +58,7 @@
     "jest": "^25.5.4",
     "pre-commit": "^1.2.2",
     "rollup-plugin-vue": "^5.1.9",
-    "uglifyjs-webpack-plugin": "^2.2.0",
+    "terser-webpack-plugin": "^4.2.2",
     "vue-jest": "^3.0.6",
     "vue-loader": "^15.9.3",
     "vue-template-compiler": "^2.6.12",
